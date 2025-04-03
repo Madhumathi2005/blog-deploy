@@ -1,0 +1,123 @@
+/* Basic Reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } */
+  
+  /* Container */
+  .create-blog-form {
+    max-width: 800px; /* Increased the width */
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    height: 680px;
+  
+  }
+  
+  /* Heading */
+  .create-blog-form h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Form Group */
+  .form-group {
+    margin-bottom: 15px;
+    margin-left: 60px;
+  }
+  
+  /* Label */
+  .form-group label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  /* Input Fields */
+  .form-group input,
+  .form-group textarea {
+    width:290px;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s ease;
+    height: 30px;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #3498db;
+  }
+  
+  /* Textarea */
+  .form-group textarea {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  /* Submit Button */
+  button {
+    width: 150px;
+    padding: 12px;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left:140px;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Optional link input */
+  .form-group input[type="text"]:nth-of-type(5) {
+    background-color: #f0f0f0;
+  }
+  
+  button[type="submit"] {
+    font-weight: bold;
+  }
+  
+  /* Form Layout */
+  @media (max-width: 768px) {
+    .create-blog-form {
+      padding: 20px;
+      margin: 20px;
+    }
+  
+    .create-blog-form h2 {
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .create-blog-form {
+      padding: 15px;
+      margin: 10px;
+    }
+  
+    .form-group input,
+    .form-group textarea {
+      font-size: 0.9rem;
+    }
+  
+    button {
+      font-size: 1rem;
+    }
+  }
+  

@@ -1,0 +1,110 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Subscription Form container */
+  #subscribe {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  /* Form styles */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  fieldset {
+    border: none;
+    padding: 0;
+  }
+  
+  /* Title styling */
+  h2 {
+    font-size: 2rem;
+    color: #2d6a4f; /* Dark green */
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  /* Input and Textarea styling */
+  input,
+  textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #2d6a4f; /* Green border */
+    background-color: #f1f8f3; /* Light greenish background */
+    color: #333;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Focus state for input and textarea */
+  input:focus,
+  textarea:focus {
+    border-color: #80e0a7; /* Lighter green */
+    box-shadow: 0 0 8px rgba(128, 224, 167, 0.6);
+    outline: none;
+  }
+  
+  /* Labels for inputs */
+  label {
+    font-size: 1.1rem;
+    color: #2d6a4f;
+    font-weight: 500;
+    margin-bottom: 5px;
+    text-align: left;
+    display: block;
+  }
+  
+  /* Button styling */
+  button#send {
+    padding: 12px 20px;
+    background-color: #2d6a4f; /* Dark green */
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button#send:hover {
+    background-color: #80e0a7; /* Light green on hover */
+    color: #2d6a4f;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    #subscribe {
+      padding: 15px;
+    }
+  
+    h2 {
+      font-size: 1.8rem;
+    }
+  
+    input,
+    textarea {
+      font-size: 1rem;
+      padding: 10px;
+    }
+  
+    button#send {
+      font-size: 1rem;
+      padding: 10px 18px;
+    }
+  }
+  

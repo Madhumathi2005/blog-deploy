@@ -1,0 +1,91 @@
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  /* Profile icon and image */
+  .profile-icon {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #4CAF50; /* Green background for the profile header */
+    border-radius: 8px;
+    width: 100%;
+    text-align: center;
+    color: white;
+  }
+  
+  .profile-icon h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .profile-icon p {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  /* Profile image styles */
+  .profile-icon img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 2px solid white; /* White border around profile image */
+  }
+  
+  /* Dropdown menu for logout */
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    min-width: 120px;
+    margin-top: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .dropdown-menu button {
+    background-color: #4CAF50; /* Green button */
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-menu button:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+  }
+  
+  .dropdown-menu button:focus {
+    outline: none;
+  }
+  
+  /* Optional: style for when the profile container is focused on */
+  .profile-container:focus {
+    border: 2px solid #4CAF50;
+    outline: none;
+  }
+  #l{
+    width: 70px;
+    height: 50px;
+    background-color: #45a049;
+  }
+  

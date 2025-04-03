@@ -1,0 +1,144 @@
+/* Registration.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #81c784, #a5d6a7, #c8e6c9);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.register-container {
+    width: 100%;
+    max-width: 600px; /* Increased max-width to 600px */
+    background: #ffffff;
+    padding: 2.5rem 2rem;
+    border-radius: 15px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+h2 {
+    font-size: 2.2rem;
+    color: #2e7d32; /* Dark green for emphasis */
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+label {
+    font-size: 1rem;
+    color: #4caf50; /* Fresh green */
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #dce775; /* Soft lime for borders */
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+}
+
+input:focus {
+    border: 1px solid #81c784; /* Match background gradient */
+    outline: none;
+    background-color: #f1f8e9; /* Soft green background */
+    box-shadow: 0 0 10px rgba(129, 199, 132, 0.2);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    color: white;
+    background: linear-gradient(135deg, #4caf50, #66bb6a);
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #388e3c, #43a047);
+    box-shadow: 0 10px 25px rgba(76, 175, 80, 0.3);
+}
+
+button:disabled {
+    background: #dce775;
+    cursor: not-allowed;
+}
+
+p {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    color: #2e7d32;
+}
+
+.link {
+    color: #388e3c; /* Complementary darker green */
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: #2e7d32;
+    text-decoration: underline;
+}
+
+.error-message {
+    color: #e53935; /* Contrasting red for errors */
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.register-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 20px;
+    height: 5px;
+    background: #66bb6a;
+    border-radius: 50px;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+    .register-container {
+        width: 90%;
+        padding: 2rem;
+    }
+}
+
+@keyframes loadingAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+button[disabled] {
+    animation: loadingAnimation 1s infinite ease-in-out;
+}
