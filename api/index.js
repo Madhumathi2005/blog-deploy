@@ -21,7 +21,7 @@ app.use(cors({
 app.use(express.json());  // Middleware to parse incoming JSON requests
 
 // MongoDB connection
-mongoose.connect('mongodb://127.0.0.1:27017/Main_Blog', {
+mongoose.connect('mongodb+srv://user:userpassword@cluster0.wd0we.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 }).then(() => console.log('Connected to MongoDB'))
